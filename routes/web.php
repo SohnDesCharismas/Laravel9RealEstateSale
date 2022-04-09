@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +41,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+//******************************* ADMİN PANEL ROUTES **********************************//
+Route::get('/admin',[AdminHomeController::class,'index'])->name('admin');
