@@ -13,6 +13,7 @@
                     <ol class="breadcrumb float-right">
                         <li class="breadcrumb-item"><a href="/admin">Home</a></li>
                         <li class="breadcrumb-item active">Category List</li>
+                        <a href="admin/category/create" class="btn btn-block btn-success" style="width: 200px;margin-top: 50px;">Add Category</a>
                     </ol>
                 </div>
 

@@ -13,3 +13,7 @@
 <script src="{{asset('assets')}}/admin/js/jquery.metisMenu.js"></script>
 <!-- CUSTOM SCRIPTS -->
 <script src="{{asset('assets')}}/admin/js/custom.js"></script>
+
+
+
+<script src="https://kit.fontawesome.com/9d0d45c4be.js" crossorigin="anonymous"></script>
