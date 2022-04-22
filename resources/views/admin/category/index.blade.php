@@ -11,9 +11,9 @@
 
                 <div class="col-sm-12">
                     <ol class="breadcrumb float-right">
-                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('admin.index')}}">Home</a></li>
                         <li class="breadcrumb-item active">Category List</li>
-                        <a href="admin/category/create" class="btn btn-block btn-success" style="width: 200px;margin-top: 50px;">Add Category</a>
+                        <a href="{{route('admin.category.create')}}" class="btn btn-block btn-success" style="width: 200px;margin-top: 50px;">Add Category</a>
                     </ol>
                 </div>
 
@@ -51,11 +51,16 @@
                                             <td>{{$rs->title}}</td>
                                             <td>{{$rs->keywords}}</td>
                                             <td>{{$rs->description}}</td>
-                                            <td>{{$rs->image}}</td>
+                                            <td>
+                                                @if($rs->image)
+                                                    <img src="{{Storage::url($rs->image)}}" alt="ne bakiyon" style="height: 40px;">
+                                                @endif
+                                            </td>
                                             <td>{{$rs->status}}</td>
-                                            <td><a href="/admin/category/edit/{{$rs->id}}" class="btn btn-block btn-info btn-sm">Edit</a></td>
-                                            <td><a href="/admin/category/delete/{{$rs->id}}" class="btn btn-block btn-danger btn-sm" onclick="return confirm('Deleting!! Are you sure??')">Delete</a></td>
-                                            <td><a href="/admin/category/show/{{$rs->id}}" class="btn btn-block btn-success btn-sm">Show</a></td>
+                                            <td><a href="{{route('admin.category.edit',['id'=>$rs->id])}}" class="btn btn-block btn-info btn-sm">Edit</a></td>
+                                            <td><a href="{{route('admin.category.delete',['id'=>$rs->id])}}" class="btn btn-block btn-danger btn-sm"
+                                                   onclick="return confirm('Deleting!! Are you sure??')">Delete</a></td>
+                                            <td><a href="{{route('admin.category.show',['id'=>$rs->id])}}" class="btn btn-block btn-success btn-sm">Show</a></td>
                                         </tr>
                                         @endforeach
                                         </tbody>

@@ -3,11 +3,11 @@
         <ul class="nav" id="main-menu">
             <li>
                 <div class="user-img-div">
-                    <img src="{{asset('assets')}}/admin/img/user.png" class="img-thumbnail" />
+                    <img src="{{asset('assets')}}/admin/img/user.png" class="img-thumbnail"/>
 
                     <div class="inner-text">
                         Jhon Deo Alex
-                        <br />
+                        <br/>
                         <small>Last Login : 2 Weeks Ago </small>
                     </div>
                 </div>
@@ -15,11 +15,12 @@
             </li>
 
             <li>
-                <a href="/admin" class="nav-link"><i class="fa fa-home"></i>Dashboard</a>
+                <a href="{{route('admin.index')}}" class="nav-link"><i class="fa fa-home"></i>Dashboard</a>
             </li>
 
             <li>
-                <a  href="index.html"><i class="fa-solid fa-align-justify text-info"></i>Orders<span class="fa arrow"></span></a>
+                <a href="index.html"><i class="fa-solid fa-align-justify text-info"></i>Orders<span
+                        class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="#"><i class="fa fa-circle-o"></i>New Orders</a>
@@ -37,11 +38,13 @@
             </li>
 
             <li>
-                <a href="/admin/category"><i class="fa-solid fa-folder-tree text-warning"></i>Categories<span class="fa arrow"></span></a>
+                <a href="{{route('admin.category.index')}}"><i class="fa-solid fa-folder-tree text-warning"></i>Categories<span
+                        class="fa arrow"></span></a>
             </li>
 
             <li>
-                <a href="/admin/product"><i class="fa-solid fa-box-open text-success"></i>Products<span class="fa arrow"></span></a>
+                <a href="/admin/product"><i class="fa-solid fa-box-open text-success"></i>Products<span
+                        class="fa arrow"></span></a>
             </li>
 
             <li>
@@ -49,19 +52,23 @@
             </li>
 
             <li>
-                <a href="/admin/faq"><i class="fa-solid fa-question text-danger"></i>FAQ<span class="fa arrow"></span></a>
+                <a href="/admin/faq"><i class="fa-solid fa-question text-danger"></i>FAQ<span
+                        class="fa arrow"></span></a>
             </li>
 
             <li>
-                <a href="/admin/message"><i class="fa-solid fa-envelope text-info"></i>Messages<span class="fa arrow"></span></a>
+                <a href="/admin/message"><i class="fa-solid fa-envelope text-info"></i>Messages<span
+                        class="fa arrow"></span></a>
             </li>
 
             <li>
-                <a href="/admin/user"><i class="fa-solid fa-people-group text-warning"></i>Users<span class="fa arrow"></span></a>
+                <a href="/admin/user"><i class="fa-solid fa-people-group text-warning"></i>Users<span
+                        class="fa arrow"></span></a>
             </li>
 
             <li>
-                <a href="/admin/social"><i class="fa-solid fa-icons text-danger"></i>Social<span class="fa arrow"></span></a>
+                <a href="/admin/social"><i class="fa-solid fa-icons text-danger"></i>Social<span
+                        class="fa arrow"></span></a>
             </li>
 
 
@@ -72,9 +79,6 @@
                     Settings
                 </a>
             </li>
-
-
-
 
 
             <li>

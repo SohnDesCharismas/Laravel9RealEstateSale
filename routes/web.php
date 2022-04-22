@@ -26,17 +26,16 @@ Route::get('/welcome', function () {
 });
 
 //3 Call Controller Function
-Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //4 Rote-> Controller-> View
-Route::get('/test', [HomeController::class,'test'])->name('test');
+Route::get('/test', [HomeController::class, 'test'])->name('test');
 
 //5 Rote-> Controller-> View
-Route::get('/param/{id}/{number}', [HomeController::class,'param'])->name('param');
+Route::get('/param/{id}/{number}', [HomeController::class, 'param'])->name('param');
 
 //6 Route with post
-Route::post('/save', [HomeController::class,'save'])->name('save');
-
+Route::post('/save', [HomeController::class, 'save'])->name('save');
 
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
@@ -47,13 +46,20 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
 
 
 //******************************* ADMİN PANEL ROUTES **********************************//
-Route::get('/admin',[AdminHomeController::class,'index'])->name('admin');
+Route::prefix('admin')->name('admin.')->group(function () {
+
+
+    Route::get('/', [AdminHomeController::class, 'index'])->name('index');
 
 //******************************* ADMİN CATEGORY ROUTES **********************************//
-Route::get('/admin/category',[CategoryController::class,'index'])->name('admin_category');
-Route::get('/admin/category/create',[CategoryController::class,'create'])->name('admin_category_create');
-Route::post('/admin/category/store',[CategoryController::class,'store'])->name('admin_category_store');
-Route::get('/admin/category/edit/{id}',[CategoryController::class,'edit'])->name('admin_category_edit');
-Route::post('/admin/category/update/{id}',[CategoryController::class,'update'])->name('admin_category_update');
-Route::get('/admin/category/delete/{id}',[CategoryController::class,'destroy'])->name('admin_category_delete');
-Route::get('/admin/category/show/{id}',[CategoryController::class,'show'])->name('admin_category_show');
+    Route::prefix('category')->name('category.')->controller(CategoryController::class)->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/create', 'create')->name('create');
+        Route::post('/store', 'store')->name('store');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/delete/{id}', 'destroy')->name('delete');
+        Route::get('/show/{id}', 'show')->name('show');
+
+    });
+});

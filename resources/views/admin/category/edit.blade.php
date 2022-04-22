@@ -12,7 +12,7 @@
         </div>
 
             <ol class="breadcrumb float-right">
-                <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{route('admin.index')}}">Home</a></li>
                 <li class="breadcrumb-item active">Edit Category</li>
             </ol>
 
@@ -22,7 +22,7 @@
                 <div class="card-header">
                    <h3 class="card-title">Category Elements</h3>
                 </div>
-                <form role="form" action="/admin/category/update/{{$data->id}}" method="post">
+                <form role="form" action="{{route('admin.category.update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label>Title</label>
@@ -41,11 +41,9 @@
                             <div class="input-group">
                               <div class="custom-file">
                                   <input name="image" type="file" class="custom-file-input" id="exampleInputFile">
-                                  <label class="custom-file-input" for="exampleInputFile">Choose File</label>
+                                  <label class="custom-file-input" for="exampleInputFile">Choose Image File</label>
                               </div>
-                              <div class="input-group-append">
-                                  <span class="input-group-text" id="">Upload</span>
-                              </div>
+
                             </div>
                         </div>
                          <div class="form-group">
