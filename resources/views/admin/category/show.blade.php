@@ -8,9 +8,11 @@
 
     <div id="page-wrapper">
         <div class="col-sm-10">
-            <div class="col-sm-3"><a href="{{route('admin.category.edit',['id'=>$data->id])}}" class="btn btn-block btn-info"
+            <div class="col-sm-3"><a href="{{route('admin.category.edit',['id'=>$data->id])}}"
+                                     class="btn btn-block btn-info"
                                      style="width: 200px;margin: 10px;">Edit</a></div>
-            <div class="col-sm-3"><a href="{{route('admin.category.delete',['id'=>$data->id])}}" class="btn btn-block btn-danger"
+            <div class="col-sm-3"><a href="{{route('admin.category.delete',['id'=>$data->id])}}"
+                                     class="btn btn-block btn-danger"
                                      onclick="return confirm('Deleting!! Are you sure??')"
                                      style="width: 200px;margin: 10px;">Delete</a></div>
         </div>
