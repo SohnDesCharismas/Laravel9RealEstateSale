@@ -43,7 +43,7 @@
             </li>
 
             <li>
-                <a href="/admin/product"><i class="fa-solid fa-box-open text-success"></i>Products<span
+                <a href="/admin/home"><i class="fa-solid fa-box-open text-success"></i>Homes<span
                         class="fa arrow"></span></a>
             </li>
 
