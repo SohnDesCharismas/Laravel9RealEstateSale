@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\AdminPanel\CategoryController;
 use App\Http\Controllers\AdminPanel\AdminProductController;
+use App\Http\Controllers\AdminPanel\ImageController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
@@ -74,6 +75,15 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/update/{id}', 'update')->name('update');
         Route::get('/delete/{id}', 'destroy')->name('delete');
         Route::get('/show/{id}', 'show')->name('show');
+
+    });
+
+    //******************************* ADMİN PRODUCT IMAGE GALLERY ROUTES **********************************//
+    Route::prefix('image')->name('image.')->controller(ImageController::class)->group(function () {
+        Route::get('/{hid}', 'index')->name('index');
+        Route::post('/store/{hid}', 'store')->name('store');
+        Route::get('/delete/{hid}/{id}', 'destroy')->name('delete');
+
 
     });
 

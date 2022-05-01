@@ -2,7 +2,9 @@
 
 @section('title', 'Add Home')
 
-
+@section('head')
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+@endsection
 
 @section('content')
 
@@ -67,18 +69,34 @@
                         </div>
                         <div class="form-group">
                             <label>Detail</label>
-                            <textarea name="detail" class="form-control"></textarea>
+                            <textarea name="detail" class="form-control" id="detail">
+
+                            </textarea>
+                            <script>
+                                ClassicEditor
+                                    .create( document.querySelector( '#detail' ) )
+                                    .then( editor => {
+                                        console.log( editor );
+                                    } )
+                                    .catch( error => {
+                                        console.error( error );
+                                    } );
+                            </script>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">Image</label>
-                            <div class="input-group">
-                                <div class="custom-file">
-                                    <input name="image" type="file" class="custom-file-input" id="exampleInputFile">
-                                    <label class="custom-file-input" for="exampleInputFile">Choose Image File</label>
-                                </div>
 
+                            <div class="form-group">
+                                <label for="exampleInputFile">Image</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input name="image" type="file" class="custom-file-input"
+                                               id="exampleInputFile">
+                                        <label class="custom-file-input" for="exampleInputFile">Choose Image
+                                            File</label>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
                         <div class="form-group">
                             <label>Status</label>
                             <select class="form-control" name="status">

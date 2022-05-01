@@ -40,6 +40,7 @@
                                             <th>Price</th>
                                             <th>Quantity</th>
                                             <th>Image</th>
+                                            <th>Image Gallery</th>
                                             <th>Status</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
@@ -61,6 +62,12 @@
                                                         <img src="{{Storage::url($rs->image)}}" alt="ne bakiyon"
                                                              style="height: 40px;">
                                                     @endif
+                                                </td>
+                                                <td>
+                                                    <a href="{{route('admin.image.index',['hid'=>$rs->id])}}"
+                                                       onclick="return !window.open(this.href, '','top=50 left=100 width=1100, height=700')">
+                                                        <i class="fa-regular fa-images" style="font-size: 40px;"></i>
+                                                    </a>
                                                 </td>
                                                 <td>{{$rs->status}}</td>
                                                 <td><a href="{{route('admin.home.edit',['id'=>$rs->id])}}"

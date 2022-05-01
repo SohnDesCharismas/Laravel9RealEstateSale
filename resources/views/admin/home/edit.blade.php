@@ -2,7 +2,10 @@
 
 @section('title', 'Edit Home :'.$data->title)
 
-
+@section('head')
+    <!-- include summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+@endsection
 
 @section('content')
 
@@ -102,6 +105,7 @@
                             <div class="card-footer">
                                 <button class="btn btn-primary" type="submit">Update data</button>
                             </div>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -110,4 +114,14 @@
     </div>
     <!-- /. PAGE WRAPPER  -->
 
+@endsection
+@section('foot')
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <script>
+        $(function(){
+            // Summernote
+            $('.textarea').summernote()
+        })
+    </script>
 @endsection
