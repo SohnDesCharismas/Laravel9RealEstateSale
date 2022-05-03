@@ -99,7 +99,7 @@
                                         </li>
                                         <li class="d-flex justify-content-between">
                                             <strong>Rooms:</strong>
-                                            <span>{{$data->rooms}}</span>
+                                            <span>{{$data->rooms}} + 1</span>
                                         </li>
                                         <li class="d-flex justify-content-between">
                                             <strong>Area:</strong>

@@ -7,8 +7,10 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="{{asset('assets')}}/index.html">Estate<span class="color-b">Agency</span></a>
-        <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        <a class="navbar-brand text-brand" href="{{asset('assets')}}/index.html">Estate<span
+                class="color-b">Agency</span></a>
+        <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
+                data-toggle="collapse"
                 data-target="#navbarTogglerDemo01" aria-expanded="false">
             <span class="fa fa-search" aria-hidden="true"></span>
         </button>
@@ -20,19 +22,37 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('assets')}}/about.html">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assets')}}/property-grid.html">Property</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Home Category
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{asset('assets')}}/blog-single.html">Villa</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agents-grid.html">Apartment</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Frame House</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Ranch House</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Pavilion</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Detached House</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Prefabric House</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Stone House</a>
+                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Mansion</a>
+                    </div>
+
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{asset('assets')}}/blog-grid.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        Pages
+                        Others
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{asset('assets')}}/property-single.html">Property Single</a>
                         <a class="dropdown-item" href="{{asset('assets')}}/blog-single.html">Blog Single</a>
                         <a class="dropdown-item" href="{{asset('assets')}}/agents-grid.html">Agents Grid</a>
                         <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Agent Single</a>

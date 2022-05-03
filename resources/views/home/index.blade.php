@@ -144,7 +144,7 @@
                                         </li>
                                         <li>
                                             <h4 class="card-info-title">Rooms</h4>
-                                            <span>{{$rs->rooms}}</span>
+                                            <span>{{$rs->rooms}} + 1</span>
                                         </li>
                                         <li>
                                             <h4 class="card-info-title">Baths</h4>

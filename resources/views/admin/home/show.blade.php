@@ -80,7 +80,7 @@
                                     </tr>
                                     <tr>
                                         <th>Rooms</th>
-                                        <td> {{$data->rooms}}</td>
+                                        <td> {{$data->rooms}} + 1</td>
                                     </tr>
                                     <tr>
                                         <th>Baths</th>
