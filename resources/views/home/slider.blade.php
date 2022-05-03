@@ -16,7 +16,7 @@
                                             {{$rs->title}}
                                         </h1>
                                         <p class="intro-subtitle intro-price">
-                                            <a href="#"><span class="price-a">sale | ${{$rs->price}} </span></a>
+                                            <a href="{{route('home',['id'=>$rs->id])}}"><span class="price-a">sale | ${{$rs->price}} </span></a>
                                         </p>
                                     </div>
                                 </div>

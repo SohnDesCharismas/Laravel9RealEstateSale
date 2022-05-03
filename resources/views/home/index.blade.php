@@ -132,7 +132,7 @@
                                     <div class="price-box d-flex">
                                         <span class="price-a">sale | $ {{$rs->price}}</span>
                                     </div>
-                                    <a href="#" class="link-a">Click here to view
+                                    <a href="{{route('home',['id'=>$rs->id])}}" class="link-a">Click here to view
                                         <span class="ion-ios-arrow-forward"></span>
                                     </a>
                                 </div>
@@ -140,21 +140,19 @@
                                     <ul class="card-info d-flex justify-content-around">
                                         <li>
                                             <h4 class="card-info-title">Area</h4>
-                                            <span>340m
-                        <sup>2</sup>
-                      </span>
+                                            <span>{{$rs->area}}m<sup>2</sup></span>
                                         </li>
                                         <li>
-                                            <h4 class="card-info-title">Beds</h4>
-                                            <span>2</span>
+                                            <h4 class="card-info-title">Rooms</h4>
+                                            <span>{{$rs->rooms}}</span>
                                         </li>
                                         <li>
                                             <h4 class="card-info-title">Baths</h4>
-                                            <span>4</span>
+                                            <span>{{$rs->baths}}</span>
                                         </li>
                                         <li>
                                             <h4 class="card-info-title">Garages</h4>
-                                            <span>1</span>
+                                            <span>{{$rs->garage}}</span>
                                         </li>
                                     </ul>
                                 </div>

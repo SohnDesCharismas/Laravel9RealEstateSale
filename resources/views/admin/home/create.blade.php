@@ -68,7 +68,7 @@
                             <input class="form-control" type="number" value="0" name="tax">
                         </div>
                         <div class="form-group">
-                            <label>Detail</label>
+                            <label>Detail İnf.</label>
                             <textarea name="detail" class="form-control" id="detail">
 
                             </textarea>
@@ -83,6 +83,141 @@
                                     } );
                             </script>
                         </div>
+                        <div class="form-group">
+                            <label>City</label>
+                            <select class="form-control" name="city">
+                                <option>------</option>
+                                <option>Adana</option>
+                                <option>Adıyaman</option>
+                                <option>Afyonkarahisar</option>
+                                <option>Ağrı</option>
+                                <option>Amasya</option>
+                                <option>Ankara</option>
+                                <option>Antalya</option>
+                                <option>Artvin</option>
+                                <option>Aydın</option>
+                                <option>Balıkesir</option>
+                                <option>Bilecik</option>
+                                <option>Bingöl</option>
+                                <option>Bitlis</option>
+                                <option>Bolu</option>
+                                <option>Burdur</option>
+                                <option>Bursa</option>
+                                <option>Çanakkale</option>
+                                <option>Çankırı</option>
+                                <option>Çorum</option>
+                                <option>Denizli</option>
+                                <option>Diyarbakır</option>
+                                <option>Edirne</option>
+                                <option>Elazığ</option>
+                                <option>Erzincan</option>
+                                <option>Erzurum</option>
+                                <option>Eskişehir</option>
+                                <option>Gaziantep</option>
+                                <option>Giresun</option>
+                                <option>Gümüşhane</option>
+                                <option>Hakkâri</option>
+                                <option>Hatay</option>
+                                <option>Isparta</option>
+                                <option>Mersin</option>
+                                <option>İstanbul</option>
+                                <option>İzmir</option>
+                                <option>Kars</option>
+                                <option>Kastamonu</option>
+                                <option>Kayseri</option>
+                                <option>Kırklareli</option>
+                                <option>Kırşehir</option>
+                                <option>Kocaeli</option>
+                                <option>Konya</option>
+                                <option>Kütahya</option>
+                                <option>Malatya</option>
+                                <option>Manisa</option>
+                                <option>Kahramanmaraş</option>
+                                <option>Mardin</option>
+                                <option>Muğla</option>
+                                <option>Muş</option>
+                                <option>Nevşehir</option>
+                                <option>Niğde</option>
+                                <option>Ordu</option>
+                                <option>Rize</option>
+                                <option>Sakarya</option>
+                                <option>Samsun</option>
+                                <option>Siirt</option>
+                                <option>Sinop</option>
+                                <option>Sivas</option>
+                                <option>Tekirdağ</option>
+                                <option>Tokat</option>
+                                <option>Trabzon</option>
+                                <option>Tunceli</option>
+                                <option>Şanlıurfa</option>
+                                <option>Uşak</option>
+                                <option>Van</option>
+                                <option>Yozgat</option>
+                                <option>Zonguldak</option>
+                                <option>Aksaray</option>
+                                <option>Bayburt</option>
+                                <option>Karaman</option>
+                                <option>Kırıkkale</option>
+                                <option>Batman</option>
+                                <option>Şırnak</option>
+                                <option>Bartın</option>
+                                <option>Ardahan</option>
+                                <option>Iğdır</option>
+                                <option>Yalova</option>
+                                <option>Karabük</option>
+                                <option>Kilis</option>
+                                <option>Osmaniye</option>
+                                <option>Düzce</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Rooms</label>
+                            <input class="form-control" type="number" value="0" name="rooms">
+                        </div>
+                        <div class="form-group">
+                            <label>Baths</label>
+                            <input class="form-control" type="number" value="0" name="baths">
+                        </div>
+                        <div class="form-group">
+                            <label>Heating</label>
+                            <select class="form-control" name="heating">
+                                <option>Furnace</option>
+                                <option>Boiler</option>
+                                <option>Heat Pump</option>
+                                <option>Hybrid Heating</option>
+                                <option>Ductless Mini-Splits</option>
+                                <option>Radiant Heating</option>
+                                <option>Baseboard Heaters</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Garage</label>
+                            <input class="form-control" type="number" value="0" name="garage">
+                        </div>
+                        <div class="form-group">
+                            <label>Area</label>
+                            <input class="form-control" type="number" value="0" name="area">
+                        </div>
+                        <div class="form-group">
+                            <label>Furnished Stuff</label>
+                            <select class="form-control" name="furnished">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Floors</label>
+                            <input class="form-control" type="number" value="0" name="floors">
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input class="form-control" type="number" value="0" name="age">
+                        </div>
+                        <div class="form-group">
+                            <label>Dues</label>
+                            <input class="form-control" type="number" value="0" name="dues">
+                        </div>
+
                         <div class="form-group">
 
                             <div class="form-group">

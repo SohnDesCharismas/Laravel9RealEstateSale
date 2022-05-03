@@ -75,6 +75,46 @@
                                         <td> {!! $data->detail !!}</td>
                                     </tr>
                                     <tr>
+                                        <th>City</th>
+                                        <td> {{$data->city}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Rooms</th>
+                                        <td> {{$data->rooms}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Baths</th>
+                                        <td> {{$data->baths}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Heating</th>
+                                        <td> {{$data->heating}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Garage</th>
+                                        <td> {{$data->garage}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Area</th>
+                                        <td> {{$data->area}}m<sup>2</sup></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Furnished Stuff</th>
+                                        <td> {{$data->furnished}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Floors</th>
+                                        <td> {{$data->floors}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Age</th>
+                                        <td> {{$data->age}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dues</th>
+                                        <td> {{$data->dues}}</td>
+                                    </tr>
+                                    <tr>
                                         <th>Image</th>
                                         <td>
                                             @if($data->image)
