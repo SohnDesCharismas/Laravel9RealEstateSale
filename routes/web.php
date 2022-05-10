@@ -62,7 +62,8 @@ Route::get('/agenti', [HomeController::class, 'agenti'])->name('agenti');
 Route::get('/agentk', [HomeController::class, 'agentk'])->name('agentk');
 Route::get('/agentn', [HomeController::class, 'agentn'])->name('agentn');
 
-
+//******************************* SEARCH ROUTE **********************************//
+Route::post('/adduser',[HomeController::class, 'adduser'])->name('adduser');
 
 //******************************* SEARCH ROUTE **********************************//
 Route::post('/getproduct',[HomeController::class, 'getproduct'])->name('getproduct');
