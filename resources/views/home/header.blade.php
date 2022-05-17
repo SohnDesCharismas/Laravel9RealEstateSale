@@ -7,8 +7,8 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="{{asset('assets')}}/index.html">Estate<span
-                class="color-b">Agency</span></a>
+        <a class="navbar-brand text-brand" href="{{asset('assets')}}/index.html">Real<span
+                class="color-b"> Estate</span></a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
                 data-toggle="collapse"
                 data-target="#navbarTogglerDemo01" aria-expanded="false">

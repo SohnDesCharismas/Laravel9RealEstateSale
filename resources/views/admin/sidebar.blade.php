@@ -74,16 +74,13 @@
 
             <li class="nav-header" style="color: white;font-size: 20px;padding:15px;padding-top: 30px; ">LABELS</li>
             <li class="nav-item">
-                <a href="" class="nav-link active-menu">
+                <a href="{{route('admin.setting')}}" class="nav-link active-menu">
                     <i class="fa-solid fa-gear text-muted"></i>
                     Settings
                 </a>
             </li>
 
 
-            <li>
-                <a class="active-menu" href="blank.html"><i class="fa fa-square-o text-muted"></i>Blank Page</a>
-            </li>
         </ul>
     </div>
 
