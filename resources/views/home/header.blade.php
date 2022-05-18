@@ -7,7 +7,7 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="{{asset('assets')}}/index.html">Real<span
+        <a class="navbar-brand text-brand" href="#">Real<span
                 class="color-b"> Estate</span></a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
                 data-toggle="collapse"
@@ -17,10 +17,13 @@
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{asset('assets')}}/index.html">Home</a>
+                    <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assets')}}/about.html">About</a>
+                    <a class="nav-link" href="{{route('about')}}">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('references')}}">References</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -59,7 +62,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assets')}}/contact.html">Contact</a>
+                    <a class="nav-link" href="{{route('contact')}}">Contact</a>
                 </li>
             </ul>
         </div>
