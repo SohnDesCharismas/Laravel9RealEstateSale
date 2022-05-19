@@ -38,37 +38,31 @@
             </li>
 
             <li>
-                <a href="{{route('admin.category.index')}}"><i class="fa-solid fa-folder-tree text-warning"></i>Categories<span
-                        class="fa arrow"></span></a>
+                <a href="{{route('admin.category.index')}}"><i class="fa-solid fa-folder-tree text-warning"></i>Categories</a>
             </li>
 
             <li>
-                <a href="/admin/home"><i class="fa-solid fa-box-open text-success"></i>Homes<span
-                        class="fa arrow"></span></a>
+                <a href="/admin/home"><i class="fa-solid fa-box-open text-success"></i>Homes</a>
             </li>
 
             <li>
-                <a href="/admin/comment"><i class="fa-solid fa-comments"></i>Comments<span class="fa arrow"></span></a>
+                <a href="/admin/comment"><i class="fa-solid fa-comments"></i>Comments</a>
             </li>
 
             <li>
-                <a href="/admin/faq"><i class="fa-solid fa-question text-danger"></i>FAQ<span
-                        class="fa arrow"></span></a>
+                <a href="/admin/faq"><i class="fa-solid fa-question text-danger"></i>FAQ</a>
             </li>
 
             <li>
-                <a href="/admin/message"><i class="fa-solid fa-envelope text-info"></i>Messages<span
-                        class="fa arrow"></span></a>
+                <a href="{{route('admin.message.index')}}"><i class="fa-solid fa-envelope text-info"></i>Messages</a>
             </li>
 
             <li>
-                <a href="/admin/user"><i class="fa-solid fa-people-group text-warning"></i>Users<span
-                        class="fa arrow"></span></a>
+                <a href="/admin/user"><i class="fa-solid fa-people-group text-warning"></i>Users</a>
             </li>
 
             <li>
-                <a href="/admin/social"><i class="fa-solid fa-icons text-danger"></i>Social<span
-                        class="fa arrow"></span></a>
+                <a href="/admin/social"><i class="fa-solid fa-icons text-danger"></i>Social</a>
             </li>
 
 
