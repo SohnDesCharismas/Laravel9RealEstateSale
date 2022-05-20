@@ -50,7 +50,7 @@
             </li>
 
             <li>
-                <a href="/admin/faq"><i class="fa-solid fa-question text-danger"></i>FAQ</a>
+                <a href="{{route('admin.faq.index')}}"><i class="fa-solid fa-question text-danger"></i>FAQ</a>
             </li>
 
             <li>

@@ -59,6 +59,7 @@
                         <a class="dropdown-item" href="{{asset('assets')}}/blog-single.html">Blog Single</a>
                         <a class="dropdown-item" href="{{asset('assets')}}/agents-grid.html">Agents Grid</a>
                         <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Agent Single</a>
+                        <a class="dropdown-item" href="{{route('faq')}}">FAQ</a>
                     </div>
                 </li>
                 <li class="nav-item">

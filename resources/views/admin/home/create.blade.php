@@ -232,16 +232,16 @@
 
                                 </div>
                             </div>
-                        <div class="form-group">
-                            <label>Status</label>
-                            <select class="form-control" name="status">
-                                <option>True</option>
-                                <option>False</option>
-                            </select>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-primary" type="submit">Save</button>
-                        </div>
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select class="form-control" name="status">
+                                    <option>True</option>
+                                    <option>False</option>
+                                </select>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary" type="submit">Save</button>
+                            </div>
                     </form>
                 </div>
             </section>

@@ -9,6 +9,10 @@
     <meta content="Ismail Acar" name="author">
     <link rel="icon" type="image/x-icon" href="@yield("icon")">
 
+    <!-- https://jqueryui.com/accordion/ -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
     <!-- Favicons -->
     <link href="{{asset('assets')}}/img/apple-touch-icon.png" rel="apple-touch-icon">
 
