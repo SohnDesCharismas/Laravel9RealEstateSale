@@ -184,3 +184,8 @@
         $( "#accordion" ).accordion();
     } );
 </script>
+
+
+<!-- STAR JS -->
+
+<!-- /STAR JS -->

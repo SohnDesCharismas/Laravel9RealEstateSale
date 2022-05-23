@@ -46,7 +46,7 @@
             </li>
 
             <li>
-                <a href="/admin/comment"><i class="fa-solid fa-comments"></i>Comments</a>
+                <a href="{{route('admin.comment.index')}}"><i class="fa-solid fa-comments"></i>Comments</a>
             </li>
 
             <li>

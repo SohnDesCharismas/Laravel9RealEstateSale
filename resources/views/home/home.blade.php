@@ -1,7 +1,11 @@
 @extends('layouts.frontbase')
 
 @section('title', $data->title)
-
+<style>
+    .sorange {
+        color: orange;
+    }
+</style>
 
 @section('content')
 
@@ -40,14 +44,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    @include('home.messages')
                     <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
                         <div class="carousel-item-b">
                             <img src="{{Storage::url($data->image)}}">
                         </div>
                         @foreach($images as $rs)
-                        <div class="carousel-item-b">
-                            <img src="{{Storage::url($rs->image)}}">
-                        </div>
+                            <div class="carousel-item-b">
+                                <img src="{{Storage::url($rs->image)}}">
+                            </div>
                         @endforeach
                     </div>
                     <div class="row justify-content-between">
@@ -290,6 +295,155 @@
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <section class="section-testimonials section-t8 nav-arrow-a col-md-6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="title-wrap d-flex justify-content-between">
+                                        <div class="title-box">
+                                            <h2 class="title-a">Testimonials</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="testimonial-carousel" class="owl-carousel owl-arrow owl-loaded owl-drag">
+
+
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                         style="transform: translate3d(-930px, 0px, 0px); transition: all 0s ease 0s; width: 1860px;">
+                                        @foreach($reviews as $rs)
+                                            <div class="owl-item" style="width: 930px;">
+                                                <div class="carousel-item-a">
+                                                    <div class="testimonials-box">
+                                                        <div class="row">
+                                                            <div class="col-sm-12 col-md-6">
+                                                                <div class="testimonial-author-box">
+                                                                    <img
+                                                                        src="http://127.0.0.1:8000/assets/img/mini-testimonial-1.jpg"
+                                                                        alt="" class="testimonial-avatar">
+                                                                    <h5 class="testimonial-author">Emma &amp;
+                                                                        Klaus</h5>
+                                                                </div>
+                                                                <br>
+                                                                <div class="testimonials-content">
+                                                                    <p>{{$rs->created_at}}</p>
+                                                                </div>
+                                                                <br>
+                                                                <div class="testimonial-ico">
+                                                                    <span class="ion-ios-quote"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-6">
+                                                                <div class="testimonials-content">
+                                                                    <p class="testimonial-text">
+                                                                        @if ($rs->rate==0)
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                        @endif
+                                                                        @if ($rs->rate==1)
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                        @endif
+                                                                        @if ($rs->rate==2)
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                        @endif
+                                                                        @if ($rs->rate==3)
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                        @endif
+                                                                        @if ($rs->rate==4)
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star"></span>
+                                                                        @endif
+                                                                        @if ($rs->rate==5)
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                            <span class="fa fa-star sorange"></span>
+                                                                        @endif
+                                                                    </p>
+                                                                </div>
+                                                                <div class="testimonials-content">
+                                                                    <br>
+                                                                    <p><strong>{{$rs->subject}}</strong></p>
+                                                                    <p class="testimonial-text">
+                                                                        {{$rs->review}}
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <div class="owl-nav">
+                                    <button type="button" role="presentation" class="owl-prev"><i
+                                            class="ion-ios-arrow-back" aria-hidden="true"></i></button>
+                                    <button type="button" role="presentation" class="owl-next disabled"><i
+                                            class="ion-ios-arrow-forward" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="owl-dots">
+                                    <button role="button" class="owl-dot"><span></span></button>
+                                    <button role="button" class="owl-dot active"><span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-md-6">
+                        <br><br><br><br>
+                        <h4 class="text-uppercase">Write Your Review</h4>
+                        <p>Your email address will not be published.</p>
+                        <form class="review-form" action="{{route('storecomment')}}" method="post">
+                            @csrf
+                            <input type="hidden" class="input" name="home_id" value="{{$data->id}}">
+                            <div class="form-group">
+                                <input type="text" class="input" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="input" name="review" placeholder="Your Review"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <strong class="text-uppercase">Your Rating: </strong>
+                                <div class="stars">
+                                    <input class="star star-5" id="star-5" type="radio" name="rate" value="5"/>
+                                    <label class="star star-5" for="star-5"></label>
+                                    <input class="star star-4" id="star-4" type="radio" name="rate" value="4"/>
+                                    <label class="star star-4" for="star-4"></label>
+                                    <input class="star star-3" id="star-3" type="radio" name="rate" value="3"/>
+                                    <label class="star star-3" for="star-3"></label>
+                                    <input class="star star-2" id="star-2" type="radio" name="rate" value="2"/>
+                                    <label class="star star-2" for="star-2"></label>
+                                    <input class="star star-1" id="star-1" type="radio" name="rate" value="1"/>
+                                    <label class="star star-1" for="star-1"></label>
+                                </div>
+                            </div>
+                            <button class="primary-btn">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
