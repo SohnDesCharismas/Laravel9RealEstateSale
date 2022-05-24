@@ -71,6 +71,57 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="title-box-d">
+                                        <h3 class="title-d">Average of Comment Rate</h3>
+                                        @php
+                                        $average =3.25;                                       // $data->comment->average('rate');
+                                        @endphp
+                                        {{number_format($average,1)}}
+                                        <div class="testimonials-content">
+                                            <p class="testimonial-text">
+                                                @if ($average>0 && $average<=1)
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                @endif
+                                                @if ($average>1 && $average<=2)
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                @endif
+                                                @if ($average>2 && $average<=3)
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                @endif
+                                                @if ($average>3 && $average<=4)
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                @endif
+                                                @if ($average>4 && $average<=5)
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star sorange"></span>
+                                                    <span class="fa fa-star"></span>
+                                                @endif
+                                            </p>
+                                            <a href="#">
+                                                {{number_format($average,1)}} Review(s) / Add Review
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="title-box-d">
                                         <h3 class="title-d">Property Description</h3>
                                     </div>
                                 </div>
