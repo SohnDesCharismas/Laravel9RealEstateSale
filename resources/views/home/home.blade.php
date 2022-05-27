@@ -466,9 +466,8 @@
                         </div>
                     </section>
                     <div class="col-md-6">
-                        <br><br><br><br>
+                        <br><br><br>
                         <h4 class="text-uppercase">Write Your Review</h4>
-                        <p>Your email address will not be published.</p>
                         <form class="review-form" action="{{route('storecomment')}}" method="post">
                             @csrf
                             <input type="hidden" class="input" name="home_id" value="{{$data->id}}">
@@ -493,7 +492,11 @@
                                     <label class="star star-1" for="star-1"></label>
                                 </div>
                             </div>
+                            @auth
                             <button class="primary-btn">Submit</button>
+                            @else
+                                <a href="/login" class="btn-primary">For submit your review, Please Login.</a>
+                            @endauth
                         </form>
                     </div>
                 </div>

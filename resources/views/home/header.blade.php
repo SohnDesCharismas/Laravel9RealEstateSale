@@ -20,17 +20,17 @@
                     <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('about')}}">About Us</a>
+                    <a class="nav-link" href="{{route('about')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('references')}}">References</a>
+                    <a class="nav-link" href="{{route('references')}}">Reference</a>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        Home Category
+                        Category
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{asset('assets')}}/blog-single.html">Villa</a>
@@ -44,10 +44,6 @@
                         <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Mansion</a>
                     </div>
 
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{{asset('assets')}}/blog-grid.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -64,6 +60,34 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    @guest
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <i class="fa-solid fa-user fa-sm" style="color: #00CA79"></i>
+                        Log/Reg
+                    </a>
+                    @endguest
+                    @auth
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-user fa-sm" style="color: #00CA79"></i>{{Auth::user()->name}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/logoutuser">Log out</a>
+                        </div>
+                    @endauth
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        @guest
+                            <a class="dropdown-item" href="/loginuser">Login</a>
+                            <a class="dropdown-item" href="/registeruser">Register</a>
+                        @endguest
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('contact')}}"></a>
                 </li>
             </ul>
         </div>

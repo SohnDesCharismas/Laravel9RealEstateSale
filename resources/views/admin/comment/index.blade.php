@@ -48,13 +48,16 @@
                                             <tr>
                                                 <td>{{$rs->id}}</td>
                                                 <td>Ismail Acar</td>
-                                                <th><a href="{{route('admin.home.show',['id'=>$rs->home_id])}}">{{$rs->home->title}}</a></th>
+                                                <th>
+                                                    <a href="{{route('admin.home.show',['id'=>$rs->home_id])}}">{{$rs->home->title}}</a>
+                                                </th>
                                                 <td>{{$rs->subject}}</td>
                                                 <td>{{$rs->review}}</td>
                                                 <td>{{$rs->rate}}</td>
                                                 <td>{{$rs->status}}</td>
                                                 <td>
-                                                    <a href="{{route('admin.comment.show',['id'=>$rs->id])}}" class="btn btn-block btn-success btn-sm"
+                                                    <a href="{{route('admin.comment.show',['id'=>$rs->id])}}"
+                                                       class="btn btn-block btn-success btn-sm"
                                                        onclick="return !window.open(this.href, '','top=50 left=100 width=1100, height=700')">
                                                         Show
                                                     </a>

@@ -185,6 +185,9 @@
     } );
 </script>
 
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/9d0d45c4be.js" crossorigin="anonymous"></script>
+
 
 <!-- STAR JS -->
 
