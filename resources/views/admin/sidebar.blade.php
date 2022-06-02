@@ -6,8 +6,10 @@
                     <img src="{{asset('assets')}}/admin/img/user.png" class="img-thumbnail"/>
 
                     <div class="inner-text">
-                        Jhon Deo Alex
-                        <br/>
+                        {{ Auth::user()->name }}
+                        <br>
+                        <a href="/logoutuser" class="text-uppercase inner-text">Logout</a>
+                        <br>
                         <small>Last Login : 2 Weeks Ago </small>
                     </div>
                 </div>
