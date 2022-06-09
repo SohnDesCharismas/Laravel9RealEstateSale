@@ -63,10 +63,10 @@
                 </li>
                 <li class="nav-item dropdown">
                     @guest
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                        <i class="fa-solid fa-user fa-sm" style="color: #00CA79"></i>
-                        Log/Reg
-                    </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                            <i class="fa-solid fa-user fa-sm" style="color: #00CA79"></i>
+                            Log/Reg
+                        </a>
                     @endguest
                     @auth
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -75,6 +75,10 @@
                             <i class="fa-solid fa-user fa-sm" style="color: #00CA79"></i>{{Auth::user()->name}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{route('userpanel.index')}}">My Account</a>
+                            <a class="dropdown-item" href="">My Wishlist</a>
+                            <a class="dropdown-item" href="">Compare</a>
+                            <a class="dropdown-item" href="">Checkout</a>
                             <a class="dropdown-item" href="/logoutuser">Log out</a>
                         </div>
                     @endauth
