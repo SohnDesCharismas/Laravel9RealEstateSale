@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\AdminPanel\AdminUserController;
 use App\Http\Controllers\AdminPanel\CategoryController;
 use App\Http\Controllers\AdminPanel\AdminProductController;
 use App\Http\Controllers\AdminPanel\CommentController;
@@ -136,7 +137,17 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/update/{id}', 'update')->name('update');
         Route::get('/delete/{id}', 'destroy')->name('delete');
         Route::get('/show/{id}', 'show')->name('show');
+    });
 
+    //******************************* ADMİN USER ROUTES **********************************//
+    Route::prefix('/user')->name('user.')->controller(AdminUserController::class)->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/edit/{id}', 'edit')->name('edit');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/delete/{id}', 'destroy')->name('delete');
+        Route::get('/deleterole/{uid}/{rid}', 'deleterole')->name('deleterole');
+        Route::get('/show/{id}', 'show')->name('show');
+        Route::post('/addrole/{id}', 'addrole')->name('addrole');
     });
 
 
