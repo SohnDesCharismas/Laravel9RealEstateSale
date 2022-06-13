@@ -129,7 +129,7 @@
                             <div class="card-overlay-a-content">
                                 <div class="card-header-a">
                                     <h2 class="card-title-a">
-                                        <a href="{{asset('assets')}}/property-single.html">{{$rs->title}}</a>
+                                        <a href="{{route('home',['id'=>$rs->id])}}">{{$rs->title}}</a>
                                     </h2>
                                 </div>
                                 <div class="card-body-a">
@@ -180,7 +180,7 @@
                             <h2 class="title-a">Best Agents</h2>
                         </div>
                         <div class="title-link">
-                            <a href="{{asset('assets')}}/agents-grid.html">All Agents
+                            <a href="/agents">All Agents
                                 <span class="ion-ios-arrow-forward"></span>
                             </a>
                         </div>
@@ -191,26 +191,26 @@
                 <div class="col-md-4">
                     <div class="card-box-d">
                         <div class="card-img-d">
-                            <img src="{{asset('assets')}}/img/agent-4.jpg" alt="" class="img/img-d img-fluid">
+                            <img src="{{asset('assets')}}/img/n.jpg" style="width: 350px; height: 450px;" alt="" class="img/img-d img-fluid">
                         </div>
                         <div class="card-overlay card-overlay-hover">
                             <div class="card-header-d">
                                 <div class="card-title-d align-self-center">
                                     <h3 class="title-d">
-                                        <a href="{{asset('assets')}}/agent-single.html" class="link-two">Margaret Sotillo
-                                            <br> Escala</a>
+                                        <a href="/agentn" class="link-two">Nahide
+                                            <br> Ahmadi</a>
                                     </h3>
                                 </div>
                             </div>
                             <div class="card-body-d">
                                 <p class="content-d color-text-a">
-                                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                                    I can mediate for you to buy a property
                                 </p>
                                 <div class="info-agents color-a">
                                     <p>
-                                        <strong>Phone: </strong> +54 356 945234</p>
+                                        <strong>Phone: </strong> +90 536 945234</p>
                                     <p>
-                                        <strong>Email: </strong> agents@example.com</p>
+                                        <strong>Email: </strong> Nahid-03@gmail.com</p>
                                 </div>
                             </div>
                             <div class="card-footer-d">
@@ -250,26 +250,26 @@
                 <div class="col-md-4">
                     <div class="card-box-d">
                         <div class="card-img-d">
-                            <img src="{{asset('assets')}}/img/agent-1.jpg" alt="" class="img/img-d img-fluid">
+                            <img src="{{asset('assets')}}/img/i.jpg" style="width: 350px; height: 450px;" alt="" class="img/img-d img-fluid">
                         </div>
                         <div class="card-overlay card-overlay-hover">
                             <div class="card-header-d">
                                 <div class="card-title-d align-self-center">
                                     <h3 class="title-d">
-                                        <a href="{{asset('assets')}}/agent-single.html" class="link-two">Stiven Spilver
-                                            <br> Darw</a>
+                                        <a href="/agenti" class="link-two">İsmail
+                                            <br> Acar</a>
                                     </h3>
                                 </div>
                             </div>
                             <div class="card-body-d">
                                 <p class="content-d color-text-a">
-                                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                                    I can mediate for you to buy a property
                                 </p>
                                 <div class="info-agents color-a">
                                     <p>
-                                        <strong>Phone: </strong> +54 356 945234</p>
+                                        <strong>Phone: </strong> +905536868494</p>
                                     <p>
-                                        <strong>Email: </strong> agents@example.com</p>
+                                        <strong>Email: </strong> mor-bamya@hotmail.com</p>
                                 </div>
                             </div>
                             <div class="card-footer-d">
@@ -309,26 +309,26 @@
                 <div class="col-md-4">
                     <div class="card-box-d">
                         <div class="card-img-d">
-                            <img src="{{asset('assets')}}/img/agent-5.jpg" alt="" class="img/img-d img-fluid">
+                            <img src="{{asset('assets')}}/img/k.jpg" style="width: 350px; height: 450px;" alt="" class="img/img-d img-fluid">
                         </div>
                         <div class="card-overlay card-overlay-hover">
                             <div class="card-header-d">
                                 <div class="card-title-d align-self-center">
                                     <h3 class="title-d">
-                                        <a href="{{asset('assets')}}/agent-single.html" class="link-two">Emma Toledo
-                                            <br> Cascada</a>
+                                        <a href="/agentk" class="link-two">Kardelen
+                                            <br> Keleş</a>
                                     </h3>
                                 </div>
                             </div>
                             <div class="card-body-d">
                                 <p class="content-d color-text-a">
-                                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                                    I can mediate for you to buy a property
                                 </p>
                                 <div class="info-agents color-a">
                                     <p>
-                                        <strong>Phone: </strong> +54 356 945234</p>
+                                        <strong>Phone: </strong> +90 536 945234</p>
                                     <p>
-                                        <strong>Email: </strong> agents@example.com</p>
+                                        <strong>Email: </strong> kardo-ak-47@hotmail.com</p>
                                 </div>
                             </div>
                             <div class="card-footer-d">
@@ -485,75 +485,5 @@
     </section>
     <!--/ News End /-->
 
-    <!--/ Testimonials Star /-->
-    <section class="section-testimonials section-t8 nav-arrow-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-wrap d-flex justify-content-between">
-                        <div class="title-box">
-                            <h2 class="title-a">Testimonials</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="testimonial-carousel" class="owl-carousel owl-arrow">
-                <div class="carousel-item-a">
-                    <div class="testimonials-box">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="testimonial-img">
-                                    <img src="{{asset('assets')}}/img/testimonial-1.jpg" alt="" class="img/img-fluid">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="testimonial-ico">
-                                    <span class="ion-ios-quote"></span>
-                                </div>
-                                <div class="testimonials-content">
-                                    <p class="testimonial-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                                        debitis hic ber quibusdam
-                                        voluptatibus officia expedita corpori.
-                                    </p>
-                                </div>
-                                <div class="testimonial-author-box">
-                                    <img src="{{asset('assets')}}/img/mini-testimonial-1.jpg" alt="" class="testimonial-avatar">
-                                    <h5 class="testimonial-author">Albert & Erika</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item-a">
-                    <div class="testimonials-box">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="testimonial-img">
-                                    <img src="{{asset('assets')}}/img/testimonial-2.jpg" alt="" class="img/img-fluid">
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="testimonial-ico">
-                                    <span class="ion-ios-quote"></span>
-                                </div>
-                                <div class="testimonials-content">
-                                    <p class="testimonial-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                                        debitis hic ber quibusdam
-                                        voluptatibus officia expedita corpori.
-                                    </p>
-                                </div>
-                                <div class="testimonial-author-box">
-                                    <img src="{{asset('assets')}}/img/mini-testimonial-2.jpg" alt="" class="testimonial-avatar">
-                                    <h5 class="testimonial-author">Pablo & Emma</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/ Testimonials End /-->
+
 @endsection

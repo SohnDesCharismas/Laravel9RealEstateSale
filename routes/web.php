@@ -57,8 +57,18 @@ Route::get('/param/{id}/{number}', [HomeController::class, 'param'])->name('para
 Route::post('/save', [HomeController::class, 'save'])->name('save');
 
 Route::get('/home/{id}', [HomeController::class, 'home'])->name('home');
-Route::get('/categorylist', [HomeController::class, 'categorylist'])->name('categorylist');
+Route::get('/agents', [HomeController::class, 'agents'])->name('agents');
+Route::get('/agenti', [HomeController::class, 'agenti'])->name('agenti');
+Route::get('/agentk', [HomeController::class, 'agentk'])->name('agentk');
+Route::get('/agentn', [HomeController::class, 'agentn'])->name('agentn');
 
+
+
+//******************************* SEARCH ROUTE **********************************//
+Route::post('/getproduct',[HomeController::class, 'getproduct'])->name('getproduct');
+
+//******************************* CATEGORY HOME ROUTES **********************************//
+Route::get('/categoryhomes/{id}/{slug}',[HomeController::class,'categoryhomes'])->name('categoryhomes');
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('/dashboard', function () {

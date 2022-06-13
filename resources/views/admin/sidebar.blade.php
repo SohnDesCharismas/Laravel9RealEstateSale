@@ -20,24 +20,6 @@
                 <a href="{{route('admin.index')}}" class="nav-link"><i class="fa fa-home"></i>Dashboard</a>
             </li>
 
-            <li>
-                <a href="index.html"><i class="fa-solid fa-align-justify text-info"></i>Orders<span
-                        class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="#"><i class="fa fa-circle-o"></i>New Orders</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-circle-o" style="color: yellow"></i>Accepted Orders</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-circle-o" style="color: green"></i>Completed Orders</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-circle-o" style="color: red"></i>Cancelled Orders</a>
-                    </li>
-                </ul>
-            </li>
 
             <li>
                 <a href="{{route('admin.category.index')}}"><i class="fa-solid fa-folder-tree text-warning"></i>Categories</a>

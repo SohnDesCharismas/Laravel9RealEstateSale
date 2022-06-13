@@ -1,3 +1,46 @@
+@php
+    $mainCategories= \App\Http\Controllers\HomeController::maincategoryList();
+@endphp
+
+<style>
+    @media (min-width: 992px) {
+        .dropdown-menu .dropdown-toggle:after {
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
+        }
+
+        .dropdown-menu .dropdown-menu {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .dropdown-menu li {
+            position: relative;
+        }
+
+        .nav-item .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+
+        .nav-item .submenu-left {
+            right: 100%;
+            left: auto;
+        }
+
+        .dropdown-menu > li:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown-menu > li:hover > .submenu {
+            display: block;
+        }
+    }
+</style>
 <!--/ Nav Star /-->
 <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
@@ -7,7 +50,7 @@
             <span></span>
             <span></span>
         </button>
-        <a class="navbar-brand text-brand" href="#">Real<span
+        <a class="navbar-brand text-brand" href="/">Real<span
                 class="color-b"> Estate</span></a>
         <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none"
                 data-toggle="collapse"
@@ -17,34 +60,29 @@
         <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('about')}}">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('references')}}">Reference</a>
+
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Category
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{asset('assets')}}/blog-single.html">Villa</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agents-grid.html">Apartment</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Frame House</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Ranch House</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Pavilion</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Detached House</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Prefabric House</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Stone House</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Mansion</a>
-                    </div>
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Categories</a>
 
+                    <ul class="dropdown-menu">
+                        @foreach($mainCategories as $rs)
+                            <li><a class="dropdown-item"
+                                   href="/categoryhomes/{{$rs->id}}/{{$rs->title}}"> {{$rs->title}}</a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </li>
+
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown"
@@ -52,9 +90,7 @@
                         Others
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{asset('assets')}}/blog-single.html">Blog Single</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agents-grid.html">Agents Grid</a>
-                        <a class="dropdown-item" href="{{asset('assets')}}/agent-single.html">Agent Single</a>
+                        <a class="dropdown-item" href="/agents">Agents Grid</a>
                         <a class="dropdown-item" href="{{route('faq')}}">FAQ</a>
                     </div>
                 </li>
@@ -89,9 +125,6 @@
                             <a class="dropdown-item" href="/registeruser">Register</a>
                         @endguest
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('contact')}}"></a>
                 </li>
             </ul>
         </div>
