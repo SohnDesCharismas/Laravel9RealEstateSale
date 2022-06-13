@@ -45,9 +45,7 @@
                 <a href="/admin/user"><i class="fa-solid fa-people-group text-warning"></i>Users</a>
             </li>
 
-            <li>
-                <a href="/admin/social"><i class="fa-solid fa-icons text-danger"></i>Social</a>
-            </li>
+
 
 
             <li class="nav-header" style="color: white;font-size: 20px;padding:15px;padding-top: 30px; ">LABELS</li>

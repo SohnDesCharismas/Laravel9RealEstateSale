@@ -250,10 +250,9 @@
                         <div class="card-footer">
                             <button class="btn btn-primary" type="submit">Update data</button>
                         </div>
-                </div>
-                </form>
+                    </form></div>
+            </section>
         </div>
-        </section>
     </div>
 
     </div>
